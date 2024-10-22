@@ -10,7 +10,7 @@
 Clique na imagem para visualizar o dashboard interativo no Power BI:
 
 
-[![ProjetoGame](https://github.com/arthurffc8/Games-Sales-Analysis/blob/main/FotoProjeto.png)](https://app.powerbi.com/view?r=eyJrIjoiMjhkNzc0NTgtY2QwZS00MWE2LWI3ZTMtNGU1NjBlYzU4MTVlIiwidCI6ImRmY2E2YzQyLWM0NjktNDg1Ny05NDk5LWViN2YzNjczZjY4NCJ9)
+[![ProjetoGame](https://github.com/arthurffc8/Games-Sales-Analysis/blob/main/FotoProjeto.png)](https://app.powerbi.com/view?r=eyJrIjoiN2NiMTkwYTAtOWUwNi00Zjk0LWE2MTItZGFiNTI1MjQwNTA3IiwidCI6ImRmY2E2YzQyLWM0NjktNDg1Ny05NDk5LWViN2YzNjczZjY4NCJ9></iframe>)
 
 
 

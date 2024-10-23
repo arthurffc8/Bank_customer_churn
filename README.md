@@ -2,10 +2,9 @@
 
 ## Descrição
 
-- [ProjetoGames](https://app.powerbi.com/view?r=eyJrIjoiMjhkNzc0NTgtY2QwZS00MWE2LWI3ZTMtNGU1NjBlYzU4MTVlIiwidCI6ImRmY2E2YzQyLWM0NjktNDg1Ny05NDk5LWViN2YzNjczZjY4NCJ9): Este projeto realiza uma análise das vendas de jogos por plataforma, ano, gênero e região (Estados Unidos, Europa resto do mundo). Utiliza dados de vendas globais e busca encontrar insights sobre os gêneros e plataformas mais populares em diferentes mercados.
+- [ProjetoChurn](https://app.powerbi.com/view?r=eyJrIjoiN2NiMTkwYTAtOWUwNi00Zjk0LWE2MTItZGFiNTI1MjQwNTA3IiwidCI6ImRmY2E2YzQyLWM0NjktNDg1Ny05NDk5LWViN2YzNjczZjY4NCJ9): Este projeto realiza uma análise do churn (cancelamento de clientes) de uma empresa, identificando os principais fatores que levam ao cancelamento e propondo estratégias de retenção.
 
-
-# Dashboard de Vendas de Jogos
+# Dashboard de Bank Customer Churn
 
 Clique na imagem para visualizar o dashboard interativo no Power BI:
 
@@ -16,8 +15,11 @@ Clique na imagem para visualizar o dashboard interativo no Power BI:
 
 ## Estrutura do Projeto
 
-- **vgsales**: Contém o arquivo de dados com as vendas de jogos.
-
+- **Customer_Churn_Records.csv**: Arquivo original com as informações sobre os clientes.
+- **Customer_Churn_Records_reduced.csv**: Arquivo csv após as manipulações feitas em SQL.
+- **QueryBankCustomer.sql**: Arquivo SQL.
+- **projeto_churn.pbix**: Dashboard com as vizualizaçõesem Power BI.
+-  
 ## Ferramentas Utilizadas
 
 - **Excel**: Para manipulação básica dos dados e tabelas.
@@ -85,14 +87,15 @@ select * from bank_customer_churn.customer_churn_records;
 
 ## Principais Insights
 
-- **Jogos mais vendidos pelo mundo**: Um ranking coms os jogos e franquias mais vendidos pelo mundo.
-- **% De Jogos Vendidos por região**: Ilustra a proporção de vendas do Jogo/Franquia entre EUA/Europa/Resto do mundo.
-- **Top 5 Plataformas por região**: Ilustra a as plataformas mais vendidas entre EUA/Europa/Resto do mundo.
-- **Jogos Lançados Por ano**: Mostra a quantidade de Jogo/Franquia lançada por ano, nota-se um crescimento nas criações de jogos na segunda metade da década de 00.
+- **Credito de Pontuação**: É possível perceber que clientes com crédito muito baixo (abaixo de 400) tendem a cancelar o serviço. No entanto, acima desse valor, há uma tendência de estabilização na taxa de churn, mantendo uma variação semelhante, inclusive entre clientes com crédito mais alto.
+- **Influência da Idade**: É possível identificar um aumento na taxa de cancelamento entre clientes acima de 40 anos, com um pico até os 55 anos, seguido por uma diminuição após essa faixa etária.
+- **Tempo de serviço**: A partir deste gráfico, podemos concluir que os clientes costumam permanecer, em média, 7 anos utilizando os serviços do banco. Após esse período, taxa de cancelamento volta a aumentar.
 
 
  ## Dicas Adicionais 
 
- - **Filtros**: É possível utilizar o filtro para obter insights específicos para algum Jogo, Plataforma ou Gênero.
+ - **Filtro por país**: Filtrando por país, percebemos uma forte tendência de cancelamento por parte dos clientes alemães, com uma taxa de churn em média duas vezes maior que a dos clientes franceses e espanhóis.
+ - **Filtro por saldo e salário**: Podemos usar os filtros para analisar a taxa de churn em relação a diferentes saldos e salários. Diferente do que se imaginava, esses fatores não têm um impacto tão significativo na taxa de cancelamento.
+ 
 
 
